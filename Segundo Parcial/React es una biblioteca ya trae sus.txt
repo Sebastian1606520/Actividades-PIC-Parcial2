@@ -1,0 +1,40 @@
+React es una biblioteca ya trae sus componentes y nosotros solo los usamos, un framework es angular que es basado en componentes
+Trabajos del componente: 
+* Renderiza una parte de la vista usando el método observed, el attributchangedcallback (verificaba cual era el nombre del atributo y cuando lo identifica cambiaba el viejo por el nuevo)
+* Guarda el state: Todos los componentes tienen un state, es el estado de la primera vez que se renderizó, lo llamábamos attributechangedcallback
+* Se comunica: Se comunica entre componentes 
+
+Una aokucacuin de react es una maquina de estados
+state -> render -> vista
+Cuando cambia el state, React vuelve a renderizar la vista
+
+solo cambiando los estados se puede volver a renderizar o cambiar un componente
+
+Usamos un CDN que es un servidor de los creadores de react que tiene todas las dependencias instaladas solamente lo inportamos con import 
+import React from "https://esm.sh/react@19.2.0?dev";
+import { createRoot } from
+"https://esm.sh/react-dom@19.2.0/client?dev";
+
+CreateRoot es una función o también es el DOM de react y este se enlaza con el DOM del navegador y el DOM de react por createRoot se integra en el DOM del navegador 
+
+Para pasarle algo de padre a hijo se lo hace con atributos, pero de hijo a padre se lo hace con eventos
+
+CLASE 10/11/2026
+
+El slot nos permite colocar propiedades a un componente con JavaScript puro y webcomponents, pero en litelement se tenia @(elementos), .(atributos), ?(booleano)
+
+EL FORMULARIO NO LE PASA DIRECTO A LA TABLA PORQUE ESE NO TIENE LA LISTAEL QUE TIENE ES EL PADRE QUE ES EL HOME 
+
+El attributedobserved observa los componentes, se conecta con el attributedchangedcallback y cuando se cambia algo el observed lo manda al render y el render es el que entra en el conectedcallback para renderiza (creo que era asi)
+
+La cdn es lo qe nos permite utilizar un framework y que no hace falta instalarlo, todos los frameworks tienen los entrepoint o punto central, el createRoot crea la raíz del DOM, es decir que React crea el VirtualDOM, compara si algo se cambio con el DOM del navegador y manda a actualizarlo 
+
+El createRoot conecta el DOM del index.html y busca la etiqueta body y ahí debe haber una etiqueta <div id:"root">
+
+JSX es otra forma de escribir createElement, y Babel lo traduce, para esto debemos importar babel cuando se lo necesite, este es un transpilador de código y poder mejor los errores 
+
+En las pruebas solo si es neesario se debe usar el fragment y si ponemos un div dentro de otro div cambiar de una porque nosa saca la pocta
+
+
+
+
